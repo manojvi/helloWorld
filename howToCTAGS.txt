@@ -1,0 +1,11 @@
+apt-get install exuberant-ctags
+
+Next in your src folder
+
+# cd ~/src
+
+# ctags *.c
+
+# cat tags
+
+
