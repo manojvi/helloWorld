@@ -1,0 +1,72 @@
+
+--- Test Case 1: Synchronous Reset Test ---
+  [FAIL] TC1: State loaded on reset.
+         Expected state: 5'b11010, Got: 5'bxxxxx
+         Expected out  : 1'b0, Got: 1'bx
+  [PASS] TC1: State holds after reset de-assertion. State is 5'b11010.
+
+--- Test Case 2: State Hold Test ---
+  [PASS] TC2: Hold cycle 1. State is 5'b11010.
+  [PASS] TC2: Hold cycle 2. State is 5'b11010.
+
+--- Test Case 3: Basic LFSR Advancement (Taps: 5'b10010) ---
+  [FAIL] TC3: Advancement cycle 1.
+         Expected state: 5'b10100, Got: 5'b00001
+         Expected out  : 1'b0, Got: 1'b1
+  [FAIL] TC3: Advancement cycle 2.
+         Expected state: 5'b00010, Got: 5'b00011
+         Expected out  : 1'b0, Got: 1'b1
+  [PASS] TC3: Advancement cycle 3. State is 5'b00111.
+  [PASS] TC3: Advancement cycle 4. State is 5'b01111.
+  [PASS] TC3: Advancement cycle 5. State is 5'b11111.
+  [PASS] TC3: Advancement cycle 6. State is 5'b11110.
+  [PASS] TC3: Advancement cycle 7. State is 5'b11100.
+  [FAIL] TC3: Advancement cycle 8.
+         Expected state: 5'b11001, Got: 5'b11000
+         Expected out  : 1'b1, Got: 1'b0
+  [FAIL] TC3: Advancement cycle 9.
+         Expected state: 5'b10001, Got: 5'b10000
+         Expected out  : 1'b1, Got: 1'b0
+  [FAIL] TC3: Advancement cycle 10.
+         Expected state: 5'b00001, Got: 5'b00000
+         Expected out  : 1'b1, Got: 1'b0
+
+--- Test Case 4: Synchronous Reinitialization Test ---
+  [FAIL] TC4: State loaded on reinit.
+         Expected state: 5'b11111, Got: 5'b00001
+         Expected out  : 1'b1, Got: 1'b1
+
+--- Test Case 5: Reinit Precedence Over Advance ---
+  [FAIL] TC5: State advances once.
+         Expected state: 5'b00010, Got: 5'b11111
+         Expected out  : 1'b0, Got: 1'b1
+  [FAIL] TC5: Reinit takes precedence over advance.
+         Expected state: 5'b01010, Got: 5'b11110
+         Expected out  : 1'b0, Got: 1'b0
+
+--- Test Case 6: Edge Case - All Zeros State ---
+  [FAIL] TC6: Reset to all zeros.
+         Expected state: 5'b00000, Got: 5'b01010
+         Expected out  : 1'b0, Got: 1'b0
+  [FAIL] TC6: Stuck at zero, cycle 1.
+         Expected state: 5'b10101, Got: 5'b00000
+         Expected out  : 1'b1, Got: 1'b0
+  [FAIL] TC6: Stuck at zero, cycle 2.
+         Expected state: 5'b00000, Got: 5'b00001
+         Expected out  : 1'b0, Got: 1'b1
+  [FAIL] TC6: Stuck at zero, cycle 3.
+         Expected state: 5'b00010, Got: 5'b00011
+         Expected out  : 1'b0, Got: 1'b1
+
+--- Test Case 7: Advancement with Different Taps (5'b01101) ---
+  [FAIL] TC7: Reset with new taps.
+         Expected state: 5'b10000, Got: 5'b00111
+         Expected out  : 1'b0, Got: 1'b1
+  [FAIL] TC7: Advancement cycle 1.
+         Expected state: 5'b01110, Got: 5'b10000
+         Expected out  : 1'b0, Got: 1'b0
+  [FAIL] TC7: Advancement cycle 2 (stuck at zero).
+         Expected state: 5'b00000, Got: 5'b00001
+         Expected out  : 1'b0, Got: 1'b1
+
+FAILURE: 16 error(s) found across all test cases.

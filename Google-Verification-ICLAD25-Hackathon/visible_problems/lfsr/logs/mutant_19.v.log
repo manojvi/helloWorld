@@ -1,0 +1,54 @@
+
+--- Test Case 1: Synchronous Reset Test ---
+  [FAIL] TC1: State loaded on reset.
+         Expected state: 5'b11010, Got: 5'bxxxxx
+         Expected out  : 1'b0, Got: 1'bx
+  [FAIL] TC1: State holds after reset de-assertion.
+         Expected state: 5'b11010, Got: 5'bxxxxx
+         Expected out  : 1'b0, Got: 1'bx
+
+--- Test Case 2: State Hold Test ---
+  [FAIL] TC2: Hold cycle 1.
+         Expected state: 5'b11010, Got: 5'b00000
+         Expected out  : 1'b0, Got: 1'b0
+  [FAIL] TC2: Hold cycle 2.
+         Expected state: 5'b11010, Got: 5'b00000
+         Expected out  : 1'b0, Got: 1'b0
+
+--- Test Case 3: Basic LFSR Advancement (Taps: 5'b10010) ---
+  [PASS] TC3: Advancement cycle 1. State is 5'b00000.
+  [PASS] TC3: Advancement cycle 2. State is 5'b00000.
+  [PASS] TC3: Advancement cycle 3. State is 5'b00000.
+  [PASS] TC3: Advancement cycle 4. State is 5'b00000.
+  [PASS] TC3: Advancement cycle 5. State is 5'b00000.
+  [PASS] TC3: Advancement cycle 6. State is 5'b00000.
+  [PASS] TC3: Advancement cycle 7. State is 5'b00000.
+  [PASS] TC3: Advancement cycle 8. State is 5'b00000.
+  [PASS] TC3: Advancement cycle 9. State is 5'b00000.
+  [PASS] TC3: Advancement cycle 10. State is 5'b00000.
+
+--- Test Case 4: Synchronous Reinitialization Test ---
+  [FAIL] TC4: State loaded on reinit.
+         Expected state: 5'b11111, Got: 5'b00000
+         Expected out  : 1'b1, Got: 1'b0
+
+--- Test Case 5: Reinit Precedence Over Advance ---
+  [PASS] TC5: State advances once. State is 5'b00000.
+  [FAIL] TC5: Reinit takes precedence over advance.
+         Expected state: 5'b01010, Got: 5'b00000
+         Expected out  : 1'b0, Got: 1'b0
+
+--- Test Case 6: Edge Case - All Zeros State ---
+  [PASS] TC6: Reset to all zeros. State is 5'b00000.
+  [PASS] TC6: Stuck at zero, cycle 1. State is 5'b00000.
+  [PASS] TC6: Stuck at zero, cycle 2. State is 5'b00000.
+  [PASS] TC6: Stuck at zero, cycle 3. State is 5'b00000.
+
+--- Test Case 7: Advancement with Different Taps (5'b01101) ---
+  [FAIL] TC7: Reset with new taps.
+         Expected state: 5'b10000, Got: 5'b00000
+         Expected out  : 1'b0, Got: 1'b0
+  [PASS] TC7: Advancement cycle 1. State is 5'b00000.
+  [PASS] TC7: Advancement cycle 2 (stuck at zero). State is 5'b00000.
+
+FAILURE: 7 error(s) found across all test cases.

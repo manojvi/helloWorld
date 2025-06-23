@@ -1,0 +1,59 @@
+===== Simulation Started =====
+
+===== Test 1: Inactive (in_valid = 0) =====
+PASS: Output must be all zeros when invalid (in_valid=0, in= 5)
+PASS: Output must be all zeros when invalid (edge case) (in_valid=0, in=14)
+
+===== Test 2: Exhaustive check of valid inputs (0-14) =====
+--------------------------------------------------
+FAIL: Encoding input value 0
+      Time: 23000 ns
+      Inputs: in_valid=1, in= 0 (0b0000)
+      Expected out: 0b000000000000001
+      Actual out:   0b000000000001001
+--------------------------------------------------
+--------------------------------------------------
+FAIL: Encoding input value 1
+      Time: 24000 ns
+      Inputs: in_valid=1, in= 1 (0b0001)
+      Expected out: 0b000000000000010
+      Actual out:   0b000000000001010
+--------------------------------------------------
+--------------------------------------------------
+FAIL: Encoding input value 2
+      Time: 25000 ns
+      Inputs: in_valid=1, in= 2 (0b0010)
+      Expected out: 0b000000000000100
+      Actual out:   0b000000000001100
+--------------------------------------------------
+--------------------------------------------------
+FAIL: Encoding input value 3
+      Time: 26000 ns
+      Inputs: in_valid=1, in= 3 (0b0011)
+      Expected out: 0b000000000001000
+      Actual out:   0b000000000000000
+--------------------------------------------------
+PASS: Encoding input value 4 (in_valid=1, in= 4)
+PASS: Encoding input value 5 (in_valid=1, in= 5)
+PASS: Encoding input value 6 (in_valid=1, in= 6)
+PASS: Encoding input value 7 (in_valid=1, in= 7)
+PASS: Encoding input value 8 (in_valid=1, in= 8)
+PASS: Encoding input value 9 (in_valid=1, in= 9)
+PASS: Encoding input value 10 (in_valid=1, in=10)
+PASS: Encoding input value 11 (in_valid=1, in=11)
+PASS: Encoding input value 12 (in_valid=1, in=12)
+PASS: Encoding input value 13 (in_valid=1, in=13)
+PASS: Encoding input value 14 (in_valid=1, in=14)
+
+===== Test 3: Transitions on in_valid =====
+PASS: Check active output (in_valid=1, in= 8)
+PASS: Check de-assertion of in_valid (in_valid=0, in= 8)
+PASS: Check re-assertion of in_valid (in_valid=1, in= 8)
+
+===== Test 4: Undefined input (in=15) =====
+INFO: Applied undefined input in=15 with in_valid=1.
+      Specification does not define behavior. No checks performed.
+      Observed output is 0b000000000000000
+
+===== Simulation Finished =====
+FAILURE: 4 out of 20 tests failed.

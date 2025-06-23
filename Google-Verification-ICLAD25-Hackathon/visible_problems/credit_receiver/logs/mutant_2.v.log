@@ -1,0 +1,5 @@
+tb.v:65: syntax error
+./mutant_2.v:1: error: 'credit_receiver' has already been declared in this scope.
+tb.v:245:      : It was declared here as a module.
+./mutant_2.v:81: Module credit_receiver was already declared here: tb.v:245
+

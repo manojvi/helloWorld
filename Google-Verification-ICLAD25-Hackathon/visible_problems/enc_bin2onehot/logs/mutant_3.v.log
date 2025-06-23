@@ -1,0 +1,149 @@
+===== Simulation Started =====
+
+===== Test 1: Inactive (in_valid = 0) =====
+--------------------------------------------------
+FAIL: Output must be all zeros when invalid
+      Time: 21000 ns
+      Inputs: in_valid=0, in= 5 (0b0101)
+      Expected out: 0b000000000000000
+      Actual out:   0b000001000000000
+--------------------------------------------------
+--------------------------------------------------
+FAIL: Output must be all zeros when invalid (edge case)
+      Time: 22000 ns
+      Inputs: in_valid=0, in=14 (0b1110)
+      Expected out: 0b000000000000000
+      Actual out:   0b000001000000000
+--------------------------------------------------
+
+===== Test 2: Exhaustive check of valid inputs (0-14) =====
+--------------------------------------------------
+FAIL: Encoding input value 0
+      Time: 23000 ns
+      Inputs: in_valid=1, in= 0 (0b0000)
+      Expected out: 0b000000000000001
+      Actual out:   0b000001000000001
+--------------------------------------------------
+--------------------------------------------------
+FAIL: Encoding input value 1
+      Time: 24000 ns
+      Inputs: in_valid=1, in= 1 (0b0001)
+      Expected out: 0b000000000000010
+      Actual out:   0b000001000000010
+--------------------------------------------------
+--------------------------------------------------
+FAIL: Encoding input value 2
+      Time: 25000 ns
+      Inputs: in_valid=1, in= 2 (0b0010)
+      Expected out: 0b000000000000100
+      Actual out:   0b000001000000100
+--------------------------------------------------
+--------------------------------------------------
+FAIL: Encoding input value 3
+      Time: 26000 ns
+      Inputs: in_valid=1, in= 3 (0b0011)
+      Expected out: 0b000000000001000
+      Actual out:   0b000001000001000
+--------------------------------------------------
+--------------------------------------------------
+FAIL: Encoding input value 4
+      Time: 27000 ns
+      Inputs: in_valid=1, in= 4 (0b0100)
+      Expected out: 0b000000000010000
+      Actual out:   0b000001000010000
+--------------------------------------------------
+--------------------------------------------------
+FAIL: Encoding input value 5
+      Time: 28000 ns
+      Inputs: in_valid=1, in= 5 (0b0101)
+      Expected out: 0b000000000100000
+      Actual out:   0b000001000100000
+--------------------------------------------------
+--------------------------------------------------
+FAIL: Encoding input value 6
+      Time: 29000 ns
+      Inputs: in_valid=1, in= 6 (0b0110)
+      Expected out: 0b000000001000000
+      Actual out:   0b000001001000000
+--------------------------------------------------
+--------------------------------------------------
+FAIL: Encoding input value 7
+      Time: 30000 ns
+      Inputs: in_valid=1, in= 7 (0b0111)
+      Expected out: 0b000000010000000
+      Actual out:   0b000001010000000
+--------------------------------------------------
+--------------------------------------------------
+FAIL: Encoding input value 8
+      Time: 31000 ns
+      Inputs: in_valid=1, in= 8 (0b1000)
+      Expected out: 0b000000100000000
+      Actual out:   0b000001100000000
+--------------------------------------------------
+PASS: Encoding input value 9 (in_valid=1, in= 9)
+--------------------------------------------------
+FAIL: Encoding input value 10
+      Time: 33000 ns
+      Inputs: in_valid=1, in=10 (0b1010)
+      Expected out: 0b000010000000000
+      Actual out:   0b000011000000000
+--------------------------------------------------
+--------------------------------------------------
+FAIL: Encoding input value 11
+      Time: 34000 ns
+      Inputs: in_valid=1, in=11 (0b1011)
+      Expected out: 0b000100000000000
+      Actual out:   0b000101000000000
+--------------------------------------------------
+--------------------------------------------------
+FAIL: Encoding input value 12
+      Time: 35000 ns
+      Inputs: in_valid=1, in=12 (0b1100)
+      Expected out: 0b001000000000000
+      Actual out:   0b001001000000000
+--------------------------------------------------
+--------------------------------------------------
+FAIL: Encoding input value 13
+      Time: 36000 ns
+      Inputs: in_valid=1, in=13 (0b1101)
+      Expected out: 0b010000000000000
+      Actual out:   0b010001000000000
+--------------------------------------------------
+--------------------------------------------------
+FAIL: Encoding input value 14
+      Time: 37000 ns
+      Inputs: in_valid=1, in=14 (0b1110)
+      Expected out: 0b100000000000000
+      Actual out:   0b100001000000000
+--------------------------------------------------
+
+===== Test 3: Transitions on in_valid =====
+--------------------------------------------------
+FAIL: Check active output
+      Time: 38000 ns
+      Inputs: in_valid=1, in= 8 (0b1000)
+      Expected out: 0b000000100000000
+      Actual out:   0b000001100000000
+--------------------------------------------------
+--------------------------------------------------
+FAIL: Check de-assertion of in_valid
+      Time: 39000 ns
+      Inputs: in_valid=0, in= 8 (0b1000)
+      Expected out: 0b000000000000000
+      Actual out:   0b000001000000000
+--------------------------------------------------
+--------------------------------------------------
+FAIL: Check re-assertion of in_valid
+      Time: 40000 ns
+      Inputs: in_valid=1, in= 8 (0b1000)
+      Expected out: 0b000000100000000
+      Actual out:   0b000001100000000
+--------------------------------------------------
+
+===== Test 4: Undefined input (in=15) =====
+INFO: Applied undefined input in=15 with in_valid=1.
+      Specification does not define behavior. No checks performed.
+      Observed output is 0b000001000000000
+
+===== Simulation Finished =====
+FAILURE: 19 out of 20 tests failed.

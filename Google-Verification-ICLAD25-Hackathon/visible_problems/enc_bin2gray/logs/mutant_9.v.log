@@ -1,0 +1,37 @@
+------------------------------------------------------------
+Starting Testbench for Combinatorial Binary-to-Gray Converter
+------------------------------------------------------------
+FAILED Test Case 1: bin = 0000000000
+  -> Expected gray: 0000000000
+  -> Actual gray:   0001000000
+FAILED Test Case 2: bin = 1111111111
+  -> Expected gray: 1000000000
+  -> Actual gray:   1001000000
+FAILED Test Case 3: bin = 1000000000
+  -> Expected gray: 1100000000
+  -> Actual gray:   1101000000
+FAILED Test Case 4: bin = 0000000001
+  -> Expected gray: 0000000001
+  -> Actual gray:   0001000001
+FAILED Test Case 5: bin = 1010101010
+  -> Expected gray: 1111111111
+  -> Actual gray:   1110111111
+FAILED Test Case 6: bin = 0101010101
+  -> Expected gray: 0111111111
+  -> Actual gray:   0110111111
+FAILED Test Case 7: bin = 1101001110
+  -> Expected gray: 1011101001
+  -> Actual gray:   1010101001
+
+Starting Exhaustive Test (0 to 1023)...
+FAILED Test Case 8: bin = 0000000000
+  -> Expected gray: 0000000000
+  -> Actual gray:   0001000000
+FAILED Test Case 9: bin = 0000000001
+  -> Expected gray: 0000000001
+  -> Actual gray:   0001000001
+Exhaustive Test Complete.
+
+------------------------------------------------------------
+FAILURE: 1031 error(s) detected.
+------------------------------------------------------------

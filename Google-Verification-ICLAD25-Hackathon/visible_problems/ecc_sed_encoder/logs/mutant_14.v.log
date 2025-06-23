@@ -1,0 +1,25 @@
+tb.v:61: warning: Static variable initialization requires explicit lifetime in this context.
+tb.v:79: warning: Static variable initialization requires explicit lifetime in this context.
+tb.v:97: warning: Static variable initialization requires explicit lifetime in this context.
+tb.v:115: warning: Static variable initialization requires explicit lifetime in this context.
+tb.v:133: warning: Static variable initialization requires explicit lifetime in this context.
+tb.v:151: warning: Static variable initialization requires explicit lifetime in this context.
+PASS: Test Case 1 (All zeros) - enc_valid=0, enc_codeword=0000000000000
+FAIL: Test Case 2 (All ones) - enc_valid=0 (expected 0), enc_codeword=0111111111111
+FAIL: Test Case 3 (Single one) - enc_valid=0 (expected 0), enc_codeword=1000000000001
+FAIL: Test Case 4 (Single zero) - enc_valid=0 (expected 0), enc_codeword=1111111111110
+FAIL: Test Case 5 (Alternating 0s and 1s) - enc_valid=0 (expected 0), enc_codeword=0101010101010
+FAIL: Test Case 6 (Another Pattern) - enc_valid=0 (expected 0), enc_codeword=0110011001100
+FAIL: Test Case 7 (Random Data) - enc_valid=0 (expected 0), enc_codeword=0010100100100
+SUCCESS: All test cases passed!
+** VVP Stop(0) **
+** Flushing output streams.
+** Current simulation time is 34000 ticks.
+[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> 
+[?2004l[?2004h> ^C[?2004l[?2004h^Z[?2004l

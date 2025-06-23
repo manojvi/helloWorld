@@ -1,0 +1,155 @@
+======================================================================
+                    Starting Verilog Testbench                        
+======================================================================
+FAIL: Zero shift - 'out' data mismatch.
+  => Inputs: in=0x128398a418820, shift=0, fill=0x0a
+  => Expected: out=0x128398a418820
+  =>   Actual: out=0x328398a418820
+PASS: Shift by 1
+PASS: Shift by 3 with alternating fill
+FAIL: Maximum valid shift (4) - 'out' data mismatch.
+  => Inputs: in=0x128398a418820, shift=4, fill=0x00
+  => Expected: out=0x00000128398a4
+  =>   Actual: out=0x00000328398a4
+PASS: Minimum invalid shift (5)
+PASS: Invalid shift (6)
+PASS: Maximum invalid shift (7)
+FAIL: All 1s input, shift by 2 - 'out' data mismatch.
+  => Inputs: in=0x3ffffffffffff, shift=2, fill=0x00
+  => Expected: out=0x000ffffffffff
+  =>   Actual: out=0x0007fffffffff
+FAIL: All 0s input, shift by 4 - 'out' data mismatch.
+  => Inputs: in=0x0000000000000, shift=4, fill=0x11
+  => Expected: out=0x2318c40000000
+  =>   Actual: out=0x2318c60000000
+
+--- Starting Randomized Tests ---
+FAIL: Random test (shift=4) - 'out' data mismatch.
+  => Inputs: in=0x13524c0895e81, shift=4, fill=0x09
+  => Expected: out=0x1294a53524c08
+  =>   Actual: out=0x1294a73524c08
+FAIL: Random test (shift=2) - 'out' data mismatch.
+  => Inputs: in=0x0566306b97b0d, shift=2, fill=0x0d
+  => Expected: out=0x1ad1598c1ae5e
+  =>   Actual: out=0x1ad9598c1ae5e
+FAIL: Random test (shift=0) - 'out' data mismatch.
+  => Inputs: in=0x2846589375212, shift=0, fill=0x01
+  => Expected: out=0x2846589375212
+  =>   Actual: out=0x0846589375212
+PASS: Random test (shift=1)
+FAIL: Random test (shift=4) - 'out' data mismatch.
+  => Inputs: in=0x057ed462df78c, shift=4, fill=0x19
+  => Expected: out=0x339ce457ed462
+  =>   Actual: out=0x339ce657ed462
+PASS: Random test (shift=6)
+PASS: Random test (shift=1)
+FAIL: Random test (shift=0) - 'out' data mismatch.
+  => Inputs: in=0x0db8f793069f2, shift=0, fill=0x0e
+  => Expected: out=0x0db8f793069f2
+  =>   Actual: out=0x2db8f793069f2
+FAIL: Random test (shift=4) - 'out' data mismatch.
+  => Inputs: in=0x07ae8e2ca4ec5, shift=4, fill=0x1c
+  => Expected: out=0x39ce707ae8e2c
+  =>   Actual: out=0x39ce727ae8e2c
+FAIL: Random test (shift=4) - 'out' data mismatch.
+  => Inputs: in=0x228bd96ab582d, shift=4, fill=0x05
+  => Expected: out=0x0a529628bd96a
+  =>   Actual: out=0x0a529428bd96a
+PASS: Random test (shift=5)
+FAIL: Random test (shift=4) - 'out' data mismatch.
+  => Inputs: in=0x02120557845aa, shift=4, fill=0x1d
+  => Expected: out=0x3bdef42120557
+  =>   Actual: out=0x3bdef62120557
+PASS: Random test (shift=7)
+PASS: Random test (shift=6)
+PASS: Random test (shift=7)
+PASS: Random test (shift=3)
+PASS: Random test (shift=3)
+FAIL: Random test (shift=2) - 'out' data mismatch.
+  => Inputs: in=0x2618a20c4b341, shift=2, fill=0x18
+  => Expected: out=0x318986288312c
+  =>   Actual: out=0x318186288312c
+PASS: Random test (shift=7)
+PASS: Random test (shift=1)
+FAIL: Random test (shift=0) - 'out' data mismatch.
+  => Inputs: in=0x102bc150fdd2a, shift=0, fill=0x0b
+  => Expected: out=0x102bc150fdd2a
+  =>   Actual: out=0x302bc150fdd2a
+PASS: Random test (shift=6)
+PASS: Random test (shift=7)
+PASS: Random test (shift=3)
+PASS: Random test (shift=3)
+PASS: Random test (shift=3)
+PASS: Random test (shift=5)
+FAIL: Random test (shift=2) - 'out' data mismatch.
+  => Inputs: in=0x23789a4ae3249, shift=2, fill=0x10
+  => Expected: out=0x2108de2692b8c
+  =>   Actual: out=0x2100de2692b8c
+FAIL: Random test (shift=0) - 'out' data mismatch.
+  => Inputs: in=0x2c0d7a8c7fc51, shift=0, fill=0x16
+  => Expected: out=0x2c0d7a8c7fc51
+  =>   Actual: out=0x0c0d7a8c7fc51
+PASS: Random test (shift=1)
+PASS: Random test (shift=1)
+FAIL: Random test (shift=4) - 'out' data mismatch.
+  => Inputs: in=0x1007e36e5816d, shift=4, fill=0x19
+  => Expected: out=0x339ce5007e36e
+  =>   Actual: out=0x339ce7007e36e
+FAIL: Random test (shift=2) - 'out' data mismatch.
+  => Inputs: in=0x28f1fe9ebf6d3, shift=2, fill=0x05
+  => Expected: out=0x0a5a3c7fa7afd
+  =>   Actual: out=0x0a523c7fa7afd
+FAIL: Random test (shift=4) - 'out' data mismatch.
+  => Inputs: in=0x088782dda595b, shift=4, fill=0x09
+  => Expected: out=0x1294a488782dd
+  =>   Actual: out=0x1294a688782dd
+PASS: Random test (shift=6)
+FAIL: Random test (shift=2) - 'out' data mismatch.
+  => Inputs: in=0x33886c71a0c8e, shift=2, fill=0x1c
+  => Expected: out=0x39cce21b1c683
+  =>   Actual: out=0x39c4e21b1c683
+FAIL: Random test (shift=2) - 'out' data mismatch.
+  => Inputs: in=0x199fa937dbc26, shift=2, fill=0x13
+  => Expected: out=0x273667ea4df6f
+  =>   Actual: out=0x273e67ea4df6f
+FAIL: Random test (shift=0) - 'out' data mismatch.
+  => Inputs: in=0x3b4a39799a82f, shift=0, fill=0x13
+  => Expected: out=0x3b4a39799a82f
+  =>   Actual: out=0x1b4a39799a82f
+FAIL: Random test (shift=0) - 'out' data mismatch.
+  => Inputs: in=0x0565f22290d44, shift=0, fill=0x17
+  => Expected: out=0x0565f22290d44
+  =>   Actual: out=0x2565f22290d44
+PASS: Random test (shift=1)
+PASS: Random test (shift=5)
+PASS: Random test (shift=3)
+FAIL: Random test (shift=0) - 'out' data mismatch.
+  => Inputs: in=0x119792231ff44, shift=0, fill=0x10
+  => Expected: out=0x119792231ff44
+  =>   Actual: out=0x319792231ff44
+FAIL: Random test (shift=2) - 'out' data mismatch.
+  => Inputs: in=0x10b2a55f6adab, shift=2, fill=0x0e
+  => Expected: out=0x1ce42ca957dab
+  =>   Actual: out=0x1cec2ca957dab
+FAIL: Random test (shift=4) - 'out' data mismatch.
+  => Inputs: in=0x1addccd5ebc9a, shift=4, fill=0x1d
+  => Expected: out=0x3bdef5addccd5
+  =>   Actual: out=0x3bdef7addccd5
+PASS: Random test (shift=3)
+FAIL: Random test (shift=4) - 'out' data mismatch.
+  => Inputs: in=0x176678531340a, shift=4, fill=0x16
+  => Expected: out=0x2d6b597667853
+  =>   Actual: out=0x2d6b5b7667853
+FAIL: Random test (shift=4) - 'out' data mismatch.
+  => Inputs: in=0x28a383cd18779, shift=4, fill=0x18
+  => Expected: out=0x318c628a383cd
+  =>   Actual: out=0x318c608a383cd
+PASS: Random test (shift=3)
+FAIL: Random test (shift=0) - 'out' data mismatch.
+  => Inputs: in=0x3ca596dcb69db, shift=0, fill=0x0d
+  => Expected: out=0x3ca596dcb69db
+  =>   Actual: out=0x1ca596dcb69db
+
+======================================================================
+FAILURE:          29 error(s) found.
+======================================================================

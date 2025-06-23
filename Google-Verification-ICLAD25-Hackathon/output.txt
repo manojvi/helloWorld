@@ -1,0 +1,350 @@
+Starting evaluation for specified problems...
+
+============================================================
+--- Processing problem: counter
+============================================================
+  - Testing against mutant_14.v... [FAIL]
+  - Testing against mutant_2.v... [FAIL]
+  - Testing against mutant_5.v... [FAIL]
+  - Testing against mutant_23.v... [FAIL]
+  - Testing against mutant_8.v... [FAIL]
+  - Testing against mutant_24.v... [FAIL]
+  - Testing against mutant_30.v... [FAIL]
+  - Testing against mutant_20.v... [FAIL]
+  - Testing against mutant_13.v... [FAIL]
+  - Testing against mutant_9.v... [FAIL]
+  - Testing against mutant_12.v... [FAIL]
+  - Testing against mutant_25.v... [FAIL]
+  - Testing against mutant_21.v... [FAIL]
+  - Testing against mutant_27.v... [FAIL]
+  - Testing against mutant_1.v... [FAIL]
+  - Testing against mutant_0.v... [FAIL]
+  - Testing against mutant_28.v... [FAIL]
+  - Testing against mutant_6.v... [FAIL]
+  - Testing against mutant_3.v... [FAIL]
+  - Testing against mutant_18.v... [PASS]
+  - Testing against mutant_22.v... [FAIL]
+  - Testing against mutant_19.v... [FAIL]
+  - Testing against mutant_29.v... [FAIL]
+  - Testing against mutant_7.v... [FAIL]
+  - Testing against mutant_4.v... [FAIL]
+  - Testing against mutant_26.v... [FAIL]
+  - Testing against mutant_10.v... [FAIL]
+  - Testing against mutant_16.v... [FAIL]
+  - Testing against mutant_17.v... [FAIL]
+  - Testing against mutant_11.v... [PASS]
+  - Testing against mutant_15.v... [FAIL]
+
+--- Summary for counter ---
+❌ WARNING: Multiple modules passed. The testbench is not selective enough.
+   Passing files: mutant_18.v mutant_11.v
+
+============================================================
+--- Processing problem: credit_receiver
+============================================================
+  - Testing against mutant_14.v... [FAIL]
+  - Testing against mutant_2.v... [FAIL]
+  - Testing against mutant_5.v... [FAIL]
+  - Testing against mutant_23.v... [FAIL]
+  - Testing against mutant_8.v... [FAIL]
+  - Testing against mutant_24.v... [FAIL]
+  - Testing against mutant_30.v... [FAIL]
+  - Testing against mutant_20.v... [FAIL]
+  - Testing against mutant_13.v... [FAIL]
+  - Testing against mutant_9.v... [FAIL]
+  - Testing against mutant_12.v... [FAIL]
+  - Testing against mutant_25.v... [FAIL]
+  - Testing against mutant_21.v... [FAIL]
+  - Testing against mutant_27.v... [FAIL]
+  - Testing against mutant_1.v... [FAIL]
+  - Testing against mutant_0.v... [FAIL]
+  - Testing against mutant_28.v... [FAIL]
+  - Testing against mutant_6.v... [FAIL]
+  - Testing against mutant_3.v... [FAIL]
+  - Testing against mutant_18.v... [FAIL]
+  - Testing against mutant_22.v... [FAIL]
+  - Testing against mutant_19.v... [FAIL]
+  - Testing against mutant_29.v... [FAIL]
+  - Testing against mutant_7.v... [FAIL]
+  - Testing against mutant_4.v... [FAIL]
+  - Testing against mutant_26.v... [FAIL]
+  - Testing against mutant_10.v... [FAIL]
+  - Testing against mutant_16.v... [FAIL]
+  - Testing against mutant_17.v... [FAIL]
+  - Testing against mutant_11.v... [FAIL]
+  - Testing against mutant_15.v... [FAIL]
+
+--- Summary for credit_receiver ---
+❌ ERROR: No modules passed. The testbench may have a logic error.
+
+============================================================
+--- Processing problem: ecc_sed_encoder
+============================================================
+  - Testing against mutant_14.v... [FAIL]
+  - Testing against mutant_2.v... [FAIL]
+  - Testing against mutant_5.v... [FAIL]
+  - Testing against mutant_23.v... [FAIL]
+  - Testing against mutant_8.v... [FAIL]
+  - Testing against mutant_24.v... [FAIL]
+  - Testing against mutant_30.v... [FAIL]
+  - Testing against mutant_20.v... [FAIL]
+  - Testing against mutant_13.v... [FAIL]
+  - Testing against mutant_9.v... [FAIL]
+  - Testing against mutant_12.v... [FAIL]
+  - Testing against mutant_25.v... [FAIL]
+  - Testing against mutant_21.v... [FAIL]
+  - Testing against mutant_27.v... [FAIL]
+  - Testing against mutant_1.v... [FAIL]
+  - Testing against mutant_0.v... [FAIL]
+  - Testing against mutant_28.v... [FAIL]
+  - Testing against mutant_6.v... [FAIL]
+  - Testing against mutant_3.v... [FAIL]
+  - Testing against mutant_18.v... [FAIL]
+  - Testing against mutant_22.v... [FAIL]
+  - Testing against mutant_19.v... [FAIL]
+  - Testing against mutant_29.v... [FAIL]
+  - Testing against mutant_7.v... [FAIL]
+  - Testing against mutant_4.v... [FAIL]
+  - Testing against mutant_26.v... [FAIL]
+  - Testing against mutant_10.v... [FAIL]
+  - Testing against mutant_16.v... [FAIL]
+  - Testing against mutant_17.v... [FAIL]
+  - Testing against mutant_11.v... [FAIL]
+  - Testing against mutant_15.v... [FAIL]
+
+--- Summary for ecc_sed_encoder ---
+❌ ERROR: No modules passed. The testbench may have a logic error.
+
+============================================================
+--- Processing problem: enc_bin2gray
+============================================================
+  - Testing against mutant_14.v... [FAIL]
+  - Testing against mutant_2.v... [FAIL]
+  - Testing against mutant_5.v... [FAIL]
+  - Testing against mutant_23.v... [FAIL]
+  - Testing against mutant_8.v... [FAIL]
+  - Testing against mutant_24.v... [FAIL]
+  - Testing against mutant_30.v... [FAIL]
+  - Testing against mutant_20.v... [FAIL]
+  - Testing against mutant_13.v... [FAIL]
+  - Testing against mutant_9.v... [FAIL]
+  - Testing against mutant_12.v... [FAIL]
+  - Testing against mutant_25.v... [PASS]
+  - Testing against mutant_21.v... [FAIL]
+  - Testing against mutant_27.v... [FAIL]
+  - Testing against mutant_1.v... [FAIL]
+  - Testing against mutant_0.v... [FAIL]
+  - Testing against mutant_28.v... [FAIL]
+  - Testing against mutant_6.v... [FAIL]
+  - Testing against mutant_3.v... [FAIL]
+  - Testing against mutant_18.v... [FAIL]
+  - Testing against mutant_22.v... [FAIL]
+  - Testing against mutant_19.v... [FAIL]
+  - Testing against mutant_29.v... [FAIL]
+  - Testing against mutant_7.v... [FAIL]
+  - Testing against mutant_4.v... [FAIL]
+  - Testing against mutant_26.v... [FAIL]
+  - Testing against mutant_10.v... [FAIL]
+  - Testing against mutant_16.v... [FAIL]
+  - Testing against mutant_17.v... [FAIL]
+  - Testing against mutant_11.v... [FAIL]
+  - Testing against mutant_15.v... [FAIL]
+
+--- Summary for enc_bin2gray ---
+✅ SUCCESS: Exactly one module passed as expected.
+   Passing file: mutant_25.v
+
+============================================================
+--- Processing problem: enc_bin2onehot
+============================================================
+  - Testing against mutant_14.v... [FAIL]
+  - Testing against mutant_2.v... [FAIL]
+  - Testing against mutant_5.v... [FAIL]
+  - Testing against mutant_23.v... [FAIL]
+  - Testing against mutant_8.v... [FAIL]
+  - Testing against mutant_24.v... [FAIL]
+  - Testing against mutant_30.v... [FAIL]
+  - Testing against mutant_20.v... [FAIL]
+  - Testing against mutant_13.v... [FAIL]
+  - Testing against mutant_9.v... [FAIL]
+  - Testing against mutant_12.v... [FAIL]
+  - Testing against mutant_25.v... [FAIL]
+  - Testing against mutant_21.v... [FAIL]
+  - Testing against mutant_27.v... [PASS]
+  - Testing against mutant_1.v... [FAIL]
+  - Testing against mutant_0.v... [FAIL]
+  - Testing against mutant_28.v... [FAIL]
+  - Testing against mutant_6.v... [FAIL]
+  - Testing against mutant_3.v... [FAIL]
+  - Testing against mutant_18.v... [FAIL]
+  - Testing against mutant_22.v... [FAIL]
+  - Testing against mutant_19.v... [FAIL]
+  - Testing against mutant_29.v... [FAIL]
+  - Testing against mutant_7.v... [FAIL]
+  - Testing against mutant_4.v... [FAIL]
+  - Testing against mutant_26.v... [FAIL]
+  - Testing against mutant_10.v... [FAIL]
+  - Testing against mutant_16.v... [FAIL]
+  - Testing against mutant_17.v... [FAIL]
+  - Testing against mutant_11.v... [FAIL]
+  - Testing against mutant_15.v... [FAIL]
+
+--- Summary for enc_bin2onehot ---
+✅ SUCCESS: Exactly one module passed as expected.
+   Passing file: mutant_27.v
+
+============================================================
+--- Processing problem: fifo_flops
+============================================================
+  - Testing against mutant_14.v... [FAIL]
+  - Testing against mutant_2.v... [FAIL]
+  - Testing against mutant_5.v... [FAIL]
+  - Testing against mutant_23.v... [PASS]
+  - Testing against mutant_8.v... [FAIL]
+  - Testing against mutant_24.v... [FAIL]
+  - Testing against mutant_30.v... [FAIL]
+  - Testing against mutant_20.v... [FAIL]
+  - Testing against mutant_13.v... [FAIL]
+  - Testing against mutant_9.v... [FAIL]
+  - Testing against mutant_12.v... [FAIL]
+  - Testing against mutant_25.v... [FAIL]
+  - Testing against mutant_21.v... [FAIL]
+  - Testing against mutant_27.v... [FAIL]
+  - Testing against mutant_1.v... [FAIL]
+  - Testing against mutant_0.v... [FAIL]
+  - Testing against mutant_28.v... [FAIL]
+  - Testing against mutant_6.v... [FAIL]
+  - Testing against mutant_3.v... [FAIL]
+  - Testing against mutant_18.v... [FAIL]
+  - Testing against mutant_22.v... [FAIL]
+  - Testing against mutant_19.v... [FAIL]
+  - Testing against mutant_29.v... [FAIL]
+  - Testing against mutant_7.v... [FAIL]
+  - Testing against mutant_4.v... [FAIL]
+  - Testing against mutant_26.v... [FAIL]
+  - Testing against mutant_10.v... [FAIL]
+  - Testing against mutant_16.v... [FAIL]
+  - Testing against mutant_17.v... [FAIL]
+  - Testing against mutant_11.v... [FAIL]
+  - Testing against mutant_15.v... [FAIL]
+
+--- Summary for fifo_flops ---
+✅ SUCCESS: Exactly one module passed as expected.
+   Passing file: mutant_23.v
+
+============================================================
+--- Processing problem: lfsr
+============================================================
+  - Testing against mutant_14.v... [FAIL]
+  - Testing against mutant_2.v... [FAIL]
+  - Testing against mutant_5.v... [FAIL]
+  - Testing against mutant_23.v... [FAIL]
+  - Testing against mutant_8.v... [FAIL]
+  - Testing against mutant_24.v... [FAIL]
+  - Testing against mutant_30.v... [FAIL]
+  - Testing against mutant_20.v... [FAIL]
+  - Testing against mutant_13.v... [FAIL]
+  - Testing against mutant_9.v... [FAIL]
+  - Testing against mutant_12.v... [FAIL]
+  - Testing against mutant_25.v... [FAIL]
+  - Testing against mutant_21.v... [FAIL]
+  - Testing against mutant_27.v... [FAIL]
+  - Testing against mutant_1.v... [FAIL]
+  - Testing against mutant_0.v... [FAIL]
+  - Testing against mutant_28.v... [FAIL]
+  - Testing against mutant_6.v... [FAIL]
+  - Testing against mutant_3.v... [FAIL]
+  - Testing against mutant_18.v... [FAIL]
+  - Testing against mutant_22.v... [FAIL]
+  - Testing against mutant_19.v... [FAIL]
+  - Testing against mutant_29.v... [FAIL]
+  - Testing against mutant_7.v... [FAIL]
+  - Testing against mutant_4.v... [FAIL]
+  - Testing against mutant_26.v... [FAIL]
+  - Testing against mutant_10.v... [FAIL]
+  - Testing against mutant_16.v... [FAIL]
+  - Testing against mutant_17.v... [FAIL]
+  - Testing against mutant_11.v... [FAIL]
+  - Testing against mutant_15.v... [FAIL]
+
+--- Summary for lfsr ---
+❌ ERROR: No modules passed. The testbench may have a logic error.
+
+============================================================
+--- Processing problem: shift_left
+============================================================
+  - Testing against mutant_14.v... [PASS]
+  - Testing against mutant_2.v... [FAIL]
+  - Testing against mutant_5.v... [FAIL]
+  - Testing against mutant_23.v... [FAIL]
+  - Testing against mutant_8.v... [FAIL]
+  - Testing against mutant_24.v... [FAIL]
+  - Testing against mutant_30.v... [FAIL]
+  - Testing against mutant_20.v... [FAIL]
+  - Testing against mutant_13.v... [PASS]
+  - Testing against mutant_9.v... [FAIL]
+  - Testing against mutant_12.v... [PASS]
+  - Testing against mutant_25.v... [FAIL]
+  - Testing against mutant_21.v... [FAIL]
+  - Testing against mutant_27.v... [FAIL]
+  - Testing against mutant_1.v... [PASS]
+  - Testing against mutant_0.v... [FAIL]
+  - Testing against mutant_28.v... [FAIL]
+  - Testing against mutant_6.v... [FAIL]
+  - Testing against mutant_3.v... [FAIL]
+  - Testing against mutant_18.v... [FAIL]
+  - Testing against mutant_22.v... [FAIL]
+  - Testing against mutant_19.v... [FAIL]
+  - Testing against mutant_29.v... [FAIL]
+  - Testing against mutant_7.v... [FAIL]
+  - Testing against mutant_4.v... [PASS]
+  - Testing against mutant_26.v... [FAIL]
+  - Testing against mutant_10.v... [FAIL]
+  - Testing against mutant_16.v... [PASS]
+  - Testing against mutant_17.v... [FAIL]
+  - Testing against mutant_11.v... [PASS]
+  - Testing against mutant_15.v... [FAIL]
+
+--- Summary for shift_left ---
+❌ WARNING: Multiple modules passed. The testbench is not selective enough.
+   Passing files: mutant_14.v mutant_13.v mutant_12.v mutant_1.v mutant_4.v mutant_16.v mutant_11.v
+
+============================================================
+--- Processing problem: shift_right
+============================================================
+  - Testing against mutant_14.v... [FAIL]
+  - Testing against mutant_2.v... [FAIL]
+  - Testing against mutant_5.v... [FAIL]
+  - Testing against mutant_23.v... [FAIL]
+  - Testing against mutant_8.v... [FAIL]
+  - Testing against mutant_24.v... [FAIL]
+  - Testing against mutant_30.v... [FAIL]
+  - Testing against mutant_20.v... [FAIL]
+  - Testing against mutant_13.v... [FAIL]
+  - Testing against mutant_9.v... [FAIL]
+  - Testing against mutant_12.v... [FAIL]
+  - Testing against mutant_25.v... [FAIL]
+  - Testing against mutant_21.v... [FAIL]
+  - Testing against mutant_27.v... [FAIL]
+  - Testing against mutant_1.v... [FAIL]
+  - Testing against mutant_0.v... [FAIL]
+  - Testing against mutant_28.v... [FAIL]
+  - Testing against mutant_6.v... [FAIL]
+  - Testing against mutant_3.v... [FAIL]
+  - Testing against mutant_18.v... [FAIL]
+  - Testing against mutant_22.v... [FAIL]
+  - Testing against mutant_19.v... [FAIL]
+  - Testing against mutant_29.v... [FAIL]
+  - Testing against mutant_7.v... [FAIL]
+  - Testing against mutant_4.v... [FAIL]
+  - Testing against mutant_26.v... [FAIL]
+  - Testing against mutant_10.v... [FAIL]
+  - Testing against mutant_16.v... [FAIL]
+  - Testing against mutant_17.v... [FAIL]
+  - Testing against mutant_11.v... [FAIL]
+  - Testing against mutant_15.v... [FAIL]
+
+--- Summary for shift_right ---
+❌ ERROR: No modules passed. The testbench may have a logic error.
+
+All problems processed.
